@@ -44,3 +44,8 @@ input:focus {
   background-color: var(--color-white);
   color: var(--color-blue);
 }
+
+img{
+  width: 30%;
+  margin: 0 auto;
+}

@@ -6,6 +6,8 @@
     placeholder="Write an user!"
     class="search"
     v-model='criteria'
+    v-on:keyup.enter='onSearch'
+    v-focus
   />
 </template>
 

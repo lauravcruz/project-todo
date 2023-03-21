@@ -1,3 +1,26 @@
+<template lang = 'html'>
+  <div class="developer">
+  <img v-bind:src = 'avatar' class="developer__avatar">
+  <div class="developer__info">
+    <h2>
+      <span class="developer__name">{{ name }}</span>
+      <span class="developer__login">{{ login }}</span>
+    </h2>
+    <div class="developer__metadata">{{ metadata }}</div>
+  </div>
+  <div class="developer__stats">
+    <div class="developer__stat">
+      <div class="developer__icon"></div>
+      <div class="developer__total">{{ repos }}</div>
+    </div>
+    <div class="developer__stat" v-show="gists">
+      <div class="developer__icon"></div>
+      <div class="developer__total">{{ gists }}</div>
+    </div>
+  </div>
+</div>
+</template>
+
 <script>
 /* Este componente es hijo de Developers. Le manda propiedades */
 export default {
@@ -32,7 +55,7 @@ export default {
     repos: {
       type: Number
     },
-    gits: {
+    gists: {
       type: Number
     }
   },

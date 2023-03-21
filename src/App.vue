@@ -20,6 +20,7 @@
 
 import TodoSearch from '@/components/TodoSearch'
 import TodoLogo from '@/components/TodoLogo'
+import TodoBookmarks from '@/components/TodoBookmarks'
 
 export default {
   name: 'todo-app',
@@ -31,6 +32,7 @@ export default {
   components: {
     TodoSearch,
     TodoLogo,
+    TodoBookmarks,
     // vamos a cargar un componente de forma asíncrona. Le podemos dar un delay y qué hacer mientras carga o un error
     TodoDevelopers: () => ({
       component: import('@/components/TodoDevelopers'),
