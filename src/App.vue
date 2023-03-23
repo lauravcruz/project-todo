@@ -24,9 +24,15 @@ import TodoBookmarks from '@/components/TodoBookmarks'
 
 export default {
   name: 'todo-app',
+  data () {
+    return {
+      show: false
+    }
+  },
   methods: {
     onSearch (searchCriteria) {
       console.log('Search:', searchCriteria)
+      this.show = true
     }
   },
   components: {

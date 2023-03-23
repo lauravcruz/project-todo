@@ -21,6 +21,11 @@ export default {
       criteria: ''
     }
   },
+  methods: {
+    onSearch () {
+      this.$emit('search', this.criteria)
+    }
+  },
   watch: {
     criteria () {
       // Emit sirve para lanzar un evento hacia arriba, el padre escucha

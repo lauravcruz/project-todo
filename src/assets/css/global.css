@@ -45,7 +45,17 @@ input:focus {
   color: var(--color-blue);
 }
 
-img{
+.openwebinars-enter-active,
+.openwebinars-leave-active {
+  transition: opacity 4s;
+}
+
+.openwebinars-enter,
+.openwebinars-leave-to {
+  opacity: 0;
+}
+
+img {
   width: 30%;
   margin: 0 auto;
 }
